@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Welcome to your password generator</h1>
+        <form action="/generate_password" method="post">
+            <label for="number">Nombre de mots de passe à générer: </label>
+            <input type="number" name="number" required min="0"><br>
+            <label for="length">Nombre de caractères: </label>
+            <input type="number" name="length" required min="0"><br>
+            <button type="submit">Générer</button>
+        </form>
+    </div>
+    
+</body>
+</html>
